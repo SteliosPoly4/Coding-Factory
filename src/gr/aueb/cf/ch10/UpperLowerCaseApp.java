@@ -1,15 +1,13 @@
 package gr.aueb.cf.ch10;
 
 /**
- * Transforms to Uppercase-lowercase
- * For instance, ATHENS becomes AtHeNs
+ * Transforms to Uppercase-lowercase.
+ * For instance, ATHENS becomes AtHeNs.
  */
-
-
 public class UpperLowerCaseApp {
 
     public static void main(String[] args) {
-        String message = "Athens";
+        String message = "ATHENS";
         StringBuilder sb = new StringBuilder();
         String subStr;
         String s;
@@ -18,7 +16,6 @@ public class UpperLowerCaseApp {
             subStr = message.substring(i, i+1);
             s = (i % 2 == 0) ? subStr.toUpperCase() : subStr.toLowerCase();
             sb.append(s);
-
         }
         System.out.println(sb);
     }
